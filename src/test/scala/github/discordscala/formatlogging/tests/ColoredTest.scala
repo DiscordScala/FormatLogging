@@ -12,7 +12,7 @@ class ColoredTest extends FlatSpec with Matchers {
     error"${i + 1}" should be ("\u001B[31m[ERROR]\u001B[30m 4")
 
     val hello = "hello"
-    error"$hello World" should be ("\u001B[31m[ERROR]\u001B[30m Hello World")
+    error"$hello World" should be ("\u001B[31m[ERROR]\u001B[30m hello World")
   }
 
 }
